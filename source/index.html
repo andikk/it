@@ -332,6 +332,11 @@
       prevEl: '.swiper-button-prev',
     },
   });
+
+  $('.js-menu-btn').click(function() {
+    $('.navigation__list').toggleClass('opened'); // Открываем верхнее меню
+    $('.js-menu-btn').toggleClass('js-change'); // Меняем икноку на кнопке
+  });
 </script>
 
 </body>
