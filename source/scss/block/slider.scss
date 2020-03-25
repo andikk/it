@@ -1,0 +1,41 @@
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  color: #fff;
+  box-sizing: border-box;
+  padding-top: 3rem;
+  min-height: 400px;
+}
+
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+}
+
+.swiper-slide .title {
+  font-size: 3rem;
+  font-weight: 300;
+  text-shadow: 0 0 1px black, 0 0 0.2em black;
+}
+
+.swiper-slide .subtitle {
+  font-size: 1.3rem;
+  text-shadow: 0 0 1px black, 0 0 0.2em black;
+}
+
+.swiper-slide .text {
+  font-size: 1rem;
+  max-width: 400px;
+  text-shadow: 0 0 1px black, 0 0 0.2em black;
+}

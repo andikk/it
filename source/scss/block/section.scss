@@ -1,0 +1,26 @@
+.section {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+
+
+  &:last-child {
+    padding-bottom: 3rem;
+  }
+
+  &__title {
+    display: flex;
+    align-items: start;
+  }
+
+  &__name {
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    color: $primary-color;
+    margin-bottom: 2rem;
+  }
+
+  &__link {
+    margin-left: auto;
+    display: block;
+  }
+}
