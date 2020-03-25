@@ -3,6 +3,8 @@ $enable-responsive-font-sizes: true;
 $blue: #035eaf;
 $primary-color: #035eaf;
 $secondary-color: #3cbff2;
+//$breadcrumb-divider: quote(">");
+$breadcrumb-divider: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPjxwYXRoIGQ9Ik0yLjUgMEwxIDEuNSAzLjUgNCAxIDYuNSAyLjUgOGw0LTQtNC00eiIgZmlsbD0iY3VycmVudENvbG9yIi8+PC9zdmc+);
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "block/slider";
@@ -86,4 +88,15 @@ a[href$=".zip"]::before {
   & a {
     color: white;
   }
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.card .btn {
+  align-self: flex-start;
 }
