@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <link href="css/swiper.min.css" rel="stylesheet" type="text/css">
+  <script src="js/single/svgxuse.min.js"></script>
+  <title>IT.NCFU.RU</title>
+</head>
+
+<body>
+
+<header class="header">
+  <h1 class="visually-hidden">Информационные технологии СКФУ</h1>
+  <nav class="navigation container">
+
+    <div class="navigation__wrapper">
+      <button class="navigation__toggler js-menu-btn">
+        <span class="navigation__toggler-bar1"></span>
+        <span class="navigation__toggler-bar2"></span>
+        <span class="navigation__toggler-bar3"></span>
+      </button>
+
+      <div class="navigation__logo">
+        <a href="http://ncfu.ru"><img src="img/logo-white.svg"></a>
+      </div>
+    </div>
+
+
+    <ul class="navigation__list">
+      <li class="navigation__item">
+        <a class="navigation__link" href="/">Главная</a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__link" href="#">Новости</a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__link" href="#">Сервисы</a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__link" href="#">Ресурсы</a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__link" href="#">Техподдержка</a>
+      </li>
+      <form class="navigation__search-form" action="#">
+        <input class="navigation__input" type="text" placeholder="Что искать?">
+        <button class="button button--search" type="submit">Найти</button>
+      </form>
+    </ul>
+  </nav>
+
+</header>
+
+<main>
+
+  <section class="section container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Главная</a></li>
+        <li class="breadcrumb-item"><a href="uslugi.html">Услуги</a></li>
+      </ol>
+    </nav>
+    <h2 class="section__name">Услуги</h2>
+    <div class="section__content">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+
+          <div class="card w-100 h-100">
+            <img src="img/internet.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Аренда виртуальной серверной инфраструктуры</h5>
+              <a href="usl-arenda.html" class="btn btn-primary">Подробнее</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <div class="card w-100 h-100">
+            <img src="img/email.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Веб-хостинг</h5>
+
+              <a href="usl-hosting.html" class="btn btn-primary">Подробнее</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <div class="card w-100 h-100">
+            <img src="img/webex.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Размещение оборудование в ЦОД</h5>
+               <a href="usl-cod.html" class="btn btn-primary">Подробнее</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <div class="card w-100 h-100">
+            <img src="img/webex.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Услуги вычислительного моделирования</h5>
+
+              <a href="usl-vich.html" class="btn btn-primary">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </section>
+
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-1 d-none d-md-block">
+        <a href="http://ncfu.ru"><img src="img/logo-white.svg"></a>
+      </div>
+      <div class="col-md-5">
+        <p>ФГАОУ ВО «Северо-Кавказский федеральный университет»</p>
+        <p>Название сайта IT-службы</p>
+      </div>
+      <div class="col-md-6">
+        <p>Телефон: 8 (8652) 94‑40‑10<br>
+        Адрес: 355017, г. Ставрополь, ул. Кулакова, 2, корпус 9<br>
+        E-mail: <a href="mailto:noc@ncfu.ru">noc@ncfu.ru</a></p>
+      </div>
+    </div>
+
+  </div>
+
+
+</footer>
+
+
+<script src="js/bundle.js"></script>
+<script src="js/single/swiper.min.js"></script>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    speed: 600,
+    parallax: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
+  $('.js-menu-btn').click(function() {
+    $('.navigation__list').toggleClass('opened'); // Открываем верхнее меню
+    $('.js-menu-btn').toggleClass('js-change'); // Меняем икноку на кнопке
+  });
+</script>
+
+</body>
+</html>
