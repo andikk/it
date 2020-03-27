@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <link href="css/swiper.min.css" rel="stylesheet" type="text/css">
+  <script src="js/single/svgxuse.min.js"></script>
+  <title>IT.NCFU.RU</title>
+</head>
+
+<body>
+
+<header class="header">
+  <h1 class="visually-hidden">Информационные технологии СКФУ</h1>
+  <nav class="navigation container">
+
+    <div class="navigation__wrapper">
+      <button class="navigation__toggler js-menu-btn">
+        <span class="navigation__toggler-bar1"></span>
+        <span class="navigation__toggler-bar2"></span>
+        <span class="navigation__toggler-bar3"></span>
+      </button>
+
+      <div class="navigation__logo">
+        <a href="http://ncfu.ru"><img src="img/logo-white.svg"></a>
+      </div>
+    </div>
+
+
+    <ul class="navigation__list">
+      <li class="navigation__item">
+        <a class="navigation__link" href="/">Главная</a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__link" href="#">Новости</a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__link" href="#">Сервисы</a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__link" href="#">Ресурсы</a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__link" href="#">Техподдержка</a>
+      </li>
+      <form class="navigation__search-form" action="#">
+        <input class="navigation__input" type="text" placeholder="Что искать?">
+        <button class="button button--search" type="submit">Найти</button>
+      </form>
+    </ul>
+  </nav>
+
+</header>
+
+<main>
+
+  <section class="section container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Главная</a></li>
+        <li class="breadcrumb-item"><a href="services.html">Сервисы</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Корпоративная электронная почта</li>
+      </ol>
+    </nav>
+    <h2 class="section__name">Корпоративная электронная почта</h2>
+    <div class="section__content">
+      <p>Электронная почта университета имеет адреса в домене @ncfu.ru и доступна для всех сотрудников и подразделений университета.</p>
+      <p>Личная электронная почта выдается сотруднику университета на базе единой учетной записи по устному требованию сотрудника специалисту ИТ службы.</p>
+      <p>Электронная почта подразделения создается на основании служебной записки в свободной форме от начальника структурного подразделения с указанием лица, ответственного за прием и получение почты. При именовании таких электронных ящиков отдается предпочтение аббревиатурам расшифровываемых на английском языке.</p>
+      <p>Электронный почтовый ящик доступен из интернета и локальной сети университета с использованием веб доступа по адресу <a href="https://mail.ncfu.ru">https://mail.ncfu.ru</a>. Для работы с почтовым ящиком на компьютере можно использовать более функциональное программное обеспечение Microsoft Outlook. Электронный почтовый ящик также доступен на мобильных устройствах на базе Android и IOS.</p>
+      <p>Наличие электронной почты обязательно для доступа к некоторым сервисам, например, к серверу веб конференций Cisco WebEx.</p>
+      <p>Сервис корпоративной электронной почты реализован на платформе Microsoft Exchange 2013.</p>
+
+      <p><b>Инструкции по настройке:</b></p>
+      <ul class="list-unstyled">
+        <li><a href="as.pdf">Инструкция по настройке почтовых клиентов для корпоративной почты в Android</a></li>
+        <li><a href="as.pdf">Инструкция по настройке почтового клиента для корпоративной почты в iOS</a></li>
+        <li><a href="as.pdf">Инструкция по настройке корпоративного почтового клиента Microsoft Outlook 2013</a></li>
+        <li><a href="as.doc">Инструкция по созданию контактов в WEB-версии клиента Outlook</a></li>
+        <li><a href="as.doc">Инструкция по созданию собраний в почтовом клиенте Outlook 2013</a></li>
+        <li><a href="as.doc">Инструкция по работе с общей электронной почтой</a></li>
+      </ul>
+
+
+    </div>
+
+
+  </section>
+
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-1 d-none d-md-block">
+        <a href="http://ncfu.ru"><img src="img/logo-white.svg"></a>
+      </div>
+      <div class="col-md-5">
+        <p>ФГАОУ ВО «Северо-Кавказский федеральный университет»</p>
+        <p>Название сайта IT-службы</p>
+      </div>
+      <div class="col-md-6">
+        <p>Телефон: 8 (8652) 94‑40‑10<br>
+        Адрес: 355017, г. Ставрополь, ул. Кулакова, 2, корпус 9<br>
+        E-mail: <a href="mailto:noc@ncfu.ru">noc@ncfu.ru</a></p>
+      </div>
+    </div>
+
+  </div>
+
+
+</footer>
+
+
+<script src="js/bundle.js"></script>
+<script src="js/single/swiper.min.js"></script>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    speed: 600,
+    parallax: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
+  $('.js-menu-btn').click(function() {
+    $('.navigation__list').toggleClass('opened'); // Открываем верхнее меню
+    $('.js-menu-btn').toggleClass('js-change'); // Меняем икноку на кнопке
+  });
+</script>
+
+</body>
+</html>
